@@ -1,0 +1,5 @@
+PERFECT = 4
+GOOD = 3
+OK = 2
+POOR = 1
+ERROR = 0

@@ -1,13 +1,15 @@
-JEFF_CAO = 1
-KHOI_NGO = 2
-TONY_ZHOU = 3
-NATE_DANG = 4
-SAMSON_LY = 5
-JOHNNY_WONG = 6
-JAY_COOL = 7
-BRANDON_LEE = 8
-GORDON_CHEUNG = 9
-CORRY_PHU = 10
-MIKE_SUN = 11
-JORALD_JOAQUIN = 12
-WEI_ZHANG = 13
+from models.player import Player
+
+JEFF_CAO = Player("Jeff Cao", 1)
+KHOI_NGO = Player("Khoi Ngo", 2)
+TONY_ZHOU = Player("Tony Zhou", 3)
+NATE_DANG = Player("Nate Dang", 4)
+SAMSON_LY = Player("Samson Ly", 5)
+JOHNNY_WONG = Player("Johnny Wong", 6)
+JAY_COOL = Player("Jay Cool", 7)
+BRANDON_LEE = Player("Brandon Lee", 8)
+GORDON_CHEUNG = Player("Gordon Cheung", 9)
+CORRY_PHU = Player("Corry Phu", 10)
+MIKE_SUN = Player("Mike Sun", 11)
+JORALD_JOAQUIN = Player("Jorald Joaquin", 12)
+WEI_ZHANG = Player("Wei Zhang", 13)

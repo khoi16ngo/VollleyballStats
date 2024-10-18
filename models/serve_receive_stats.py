@@ -1,10 +1,40 @@
-class ServeReceiveStats:
-    def __init__(self):
-        self.perfect_passes = 0
-        self.great_passes = 0
-        self.good_passes = 0
-        self.poor_passes = 0
-        self.passes_errors = 0
+from constants.action_qualities import *
 
-    def getTotalPasses(self) -> int:
-        return self.perfect_passes + self.great_passes + self.good_passes + self.poor_passes + self.passes_errors
+class ServeReceiveStats:
+    def __init__(self, player_serve_receive_stats: list):
+        self.perfect_passes = self._get_perfect_pass(player_serve_receive_stats)
+        self.great_passes = self._get_great_pass(player_serve_receive_stats)
+        self.good_passes = self._get_medium_pass(player_serve_receive_stats)
+        self.poor_passes = self._get_poor_pass(player_serve_receive_stats)
+        self.pass_errors = self._get_block_errors(player_serve_receive_stats)
+        self.total_passes = self._getTotalPasses()
+
+    def _get_perfect_pass(self, player_serve_receive_stats: list) -> int: 
+        return player_serve_receive_stats[PERFECT]
+
+    def _get_great_pass(self, player_serve_receive_stats: list) -> int: 
+        return player_serve_receive_stats[GOOD]
+
+    def _get_medium_pass(self, player_serve_receive_stats: list) -> int: 
+        return player_serve_receive_stats[OK]
+
+    def _get_poor_pass(self, player_serve_receive_stats: list) -> int: 
+        return player_serve_receive_stats[POOR]
+
+    def _get_block_errors(self, player_serve_receive_stats: list) -> int: 
+        return player_serve_receive_stats[ERROR]
+
+    def _getTotalPasses(self) -> int:
+        return self.perfect_passes + self.great_passes + self.good_passes + self.poor_passes + self.pass_errors
+
+    def getInSystemPercentage(self):
+        return (self.perfect_passes + self.great_passes + self.good_passes) / self.total_passes
+
+    def getOutOfSystemPercentage(self):
+        return self.pass_errors / self.total_passes
+    
+    def getPasserAverage(self):
+        total_weighted_passes = (self.perfect_passes * 4) + (self.great_passes * 3) + (self.good_passes * 2) + (self.poor_passes * 1) + (self.pass_errors * 0.5)
+        return total_weighted_passes / self.total_passes 
+
+    

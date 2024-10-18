@@ -3,3 +3,11 @@ GOOD = 3
 OK = 2
 POOR = 1
 ERROR = 0
+
+ALL_QUALITIES = [
+    PERFECT,
+    GOOD,
+    OK,
+    POOR,
+    ERROR,
+]

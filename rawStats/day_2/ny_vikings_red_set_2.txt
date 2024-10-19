@@ -1,0 +1,467 @@
+Wei Zhang (Team Samson)
+13 p 4
+
+[0:00:22]
+
+Samson Ly (Team Samson)
+5 l 4
+
+[0:00:23]
+
+Corry Phu (Team Samson)
+10 a 4
+
+[0:00:24]
+
+Jorald Joaquin (Team Samson)
+12 s 3
+
+[0:00:43]
+
+Corry Phu (Team Samson)
+10 b 2
+
+[0:00:45]
+
+Jorald Joaquin (Team Samson)
+12 l 3
+
+[0:00:46]
+
+Jeff Cao (Team Samson)
+1 a 4
+
+[0:00:48]
+
+Jorald Joaquin (Team Samson)
+12 s 1
+
+[0:01:06]
+
+Tony Zhou (Team Samson)
+3 b 2
+
+[0:01:08]
+
+Tony Zhou (Team Samson)
+3 p 1
+
+[0:01:28]
+
+Samson Ly (Team Samson)
+5 l 0
+
+[0:01:29]
+
+Jeff Cao (Team Samson)
+1 p 1
+
+[0:01:46]
+
+Wei Zhang (Team Samson)
+13 d 2
+
+[0:01:49]
+
+Wei Zhang (Team Samson)
+13 b 3
+
+[0:01:50]
+
+Khoi Ngo (Team Samson)
+2 b 4
+
+[0:01:54]
+
+Brandon Lee (Team Samson)
+8 s 2
+
+[0:02:14]
+
+Tony Zhou (Team Samson)
+3 b 3
+
+[0:02:17]
+
+Corry Phu (Team Samson)
+10 b 3
+
+[0:02:17]
+
+Khoi Ngo (Team Samson)
+2 b 2
+
+[0:02:20]
+
+Brandon Lee (Team Samson)
+8 l 4
+
+[0:02:21]
+
+Jeff Cao (Team Samson)
+1 a 4
+
+[0:02:23]
+
+Brandon Lee (Team Samson)
+8 s 4
+
+[0:03:15]
+
+Brandon Lee (Team Samson)
+8 s 2
+
+[0:03:34]
+
+Brandon Lee (Team Samson)
+8 s 3
+
+[0:03:54]
+
+Tony Zhou (Team Samson)
+3 b 3
+
+[0:03:57]
+
+Khoi Ngo (Team Samson)
+2 b 4
+
+[0:03:58]
+
+Brandon Lee (Team Samson)
+8 s 3
+
+[0:04:14]
+
+Samson Ly (Team Samson)
+5 b 0
+
+[0:04:16]
+
+Jay Cool (Team Samson)
+7 p 3
+
+[0:04:38]
+
+Samson Ly (Team Samson)
+5 l 4
+
+[0:04:40]
+
+Wei Zhang (Team Samson)
+13 a 4
+
+[0:04:41]
+
+Jay Cool (Team Samson)
+7 s 3
+
+[0:05:21]
+
+Khoi Ngo (Team Samson)
+2 b 3
+
+[0:05:22]
+
+Jay Cool (Team Samson)
+7 s 1
+
+[0:05:43]
+
+Gordon Cheung (Team Samson)
+9 d 4
+
+[0:05:46]
+
+Samson Ly (Team Samson)
+5 l 4
+
+[0:05:48]
+
+Corry Phu (Team Samson)
+10 a 4
+
+[0:05:48]
+
+Jay Cool (Team Samson)
+7 s 3
+
+[0:06:06]
+
+Johnny Wong (Team Samson)
+6 b 0
+
+[0:06:09]
+
+Samson Ly (Team Samson)
+5 b 0
+
+[0:06:10]
+
+Brandon Lee (Team Samson)
+8 a 4
+
+[0:06:32]
+
+Jorald Joaquin (Team Samson)
+12 s 2
+
+[0:07:14]
+
+Brandon Lee (Team Samson)
+8 d 0
+
+[0:07:17]
+
+Brandon Lee (Team Samson)
+8 p 1
+
+[0:07:37]
+
+Wei Zhang (Team Samson)
+13 p 4
+
+[0:08:39]
+
+Samson Ly (Team Samson)
+5 l 4
+
+[0:08:40]
+
+Tony Zhou (Team Samson)
+3 a 4
+
+[0:08:40]
+
+Jay Cool (Team Samson)
+7 s 3
+
+[0:09:05]
+
+Khoi Ngo (Team Samson)
+2 b 4
+
+[0:09:09]
+
+Jay Cool (Team Samson)
+7 s 2
+
+[0:09:26]
+
+Tony Zhou (Team Samson)
+3 b 3
+
+[0:09:28]
+
+Khoi Ngo (Team Samson)
+2 p 3
+
+[0:09:50]
+
+Samson Ly (Team Samson)
+5 l 4
+
+[0:09:51]
+
+Jeff Cao (Team Samson)
+1 a 4
+
+[0:09:52]
+
+Jorald Joaquin (Team Samson)
+12 s 4
+
+[0:10:11]
+
+Jorald Joaquin (Team Samson)
+12 s 0
+
+[0:10:31]
+
+Jay Cool (Team Samson)
+7 p 1
+
+[0:10:50]
+
+Corry Phu (Team Samson)
+10 l 3
+
+[0:10:52]
+
+Jeff Cao (Team Samson)
+1 a 3
+
+[0:10:54]
+
+Khoi Ngo (Team Samson)
+2 b 3
+
+[0:10:56]
+
+Corry Phu (Team Samson)
+10 b 2
+
+[0:11:01]
+
+Brandon Lee (Team Samson)
+8 l 2
+
+[0:11:02]
+
+Wei Zhang (Team Samson)
+13 a 2
+
+[0:11:04]
+
+Wei Zhang (Team Samson)
+13 d 0
+
+[0:11:07]
+
+Gordon Cheung (Team Samson)
+9 p 4
+
+[0:11:28]
+
+Samson Ly (Team Samson)
+5 l 4
+
+[0:11:30]
+
+Tony Zhou (Team Samson)
+3 a 4
+
+[0:11:31]
+
+Brandon Lee (Team Samson)
+8 s 1
+
+[0:11:57]
+
+Gordon Cheung (Team Samson)
+9 d 2
+
+[0:12:00]
+
+Samson Ly (Team Samson)
+5 l 4
+
+[0:12:02]
+
+Jeff Cao (Team Samson)
+1 a 4
+
+[0:12:04]
+
+Brandon Lee (Team Samson)
+8 s 3
+
+[0:12:22]
+
+Samson Ly (Team Samson)
+5 b 3
+
+[0:12:24]
+
+Gordon Cheung (Team Samson)
+9 d 3
+
+[0:12:29]
+
+Samson Ly (Team Samson)
+5 l 3
+
+[0:12:31]
+
+Corry Phu (Team Samson)
+10 a 3
+
+[0:12:32]
+
+Brandon Lee (Team Samson)
+8 d 2
+
+[0:12:35]
+
+Tony Zhou (Team Samson)
+3 l 2
+
+[0:12:37]
+
+Jeff Cao (Team Samson)
+1 a 3
+
+[0:12:38]
+
+Johnny Wong (Team Samson)
+6 a 3
+
+[0:12:40]
+
+Brandon Lee (Team Samson)
+8 s 3
+
+[0:13:01]
+
+Brandon Lee (Team Samson)
+8 s 0
+
+[0:13:24]
+
+Tony Zhou (Team Samson)
+3 p 3
+
+[0:13:41]
+
+Samson Ly (Team Samson)
+5 l 3
+
+[0:13:42]
+
+Khoi Ngo (Team Samson)
+2 a 2
+
+[0:13:44]
+
+Jay Cool (Team Samson)
+7 d 3
+
+[0:13:45]
+
+Gordon Cheung (Team Samson)
+9 l 3
+
+[0:13:45]
+
+Jeff Cao (Team Samson)
+1 a 0
+
+[0:13:46]
+
+Khoi Ngo (Team Samson)
+2 p 2
+
+[0:14:04]
+
+Samson Ly (Team Samson)
+5 l 3
+
+[0:14:06]
+
+Wei Zhang (Team Samson)
+13 a 3
+
+[0:14:07]
+
+Jay Cool (Team Samson)
+7 d 4
+
+[0:14:11]
+
+Samson Ly (Team Samson)
+5 l 4
+
+[0:14:12]
+
+Corry Phu (Team Samson)
+10 a 4

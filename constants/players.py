@@ -13,3 +13,19 @@ CORRY_PHU = Player("Corry Phu", 10)
 MIKE_SUN = Player("Mike Sun", 11)
 JORALD_JOAQUIN = Player("Jorald Joaquin", 12)
 WEI_ZHANG = Player("Wei Zhang", 13)
+
+ALL_PLAYERS = [
+    JEFF_CAO,
+    KHOI_NGO,
+    TONY_ZHOU,
+    NATE_DANG,
+    SAMSON_LY,
+    JOHNNY_WONG,
+    JAY_COOL,
+    BRANDON_LEE,
+    GORDON_CHEUNG,
+    CORRY_PHU,
+    MIKE_SUN,
+    JORALD_JOAQUIN,
+    WEI_ZHANG,
+]

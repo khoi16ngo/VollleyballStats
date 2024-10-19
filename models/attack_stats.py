@@ -1,14 +1,13 @@
 from constants.action_qualities import *
-from constants.action_types import ATTACK
 
 class AttackStats:
     def __init__(self, player_attack_stats: list):
         self.kills = self._get_kills(player_attack_stats)
-        self.great_attacks = self._get_greatAttacks(player_attack_stats)
-        self.good_attacks = self._get_mediumAttacks(player_attack_stats)
-        self.poor_attacks = self._get_poorAttacks(player_attack_stats)
-        self.attacks_errors = self._get_attackErrors(player_attack_stats)
-        self.total_attacks = self._get_totalAttacks()
+        self.great_attacks = self._get_great_attacks(player_attack_stats)
+        self.good_attacks = self._get_medium_attacks(player_attack_stats)
+        self.poor_attacks = self._get_poor_attacks(player_attack_stats)
+        self.attacks_errors = self._get_attack_errors(player_attack_stats)
+        self.total_attacks = self._get_total_attacks()
     
     def _get_kills(self, player_attack_stats: list) -> int: 
         return player_attack_stats[PERFECT]

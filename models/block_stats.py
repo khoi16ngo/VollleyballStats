@@ -26,3 +26,10 @@ class BlockStats:
     
     def _get_total_blocks(self) -> int:
         return self.perfect_blocks + self.great_blocks + self.good_blocks + self.poor_blocks + self.blocks_errors
+
+    def get_block_average(self) -> float:
+        if self.total_blocks == 0:
+            return 0.0
+        
+        total_weighted_blocks = (self.perfect_blocks * 4) + (self.great_blocks * 3) + (self.good_blocks * 2) + (self.poor_blocks * 1) + (self.blocks_errors * 0.5)
+        return total_weighted_blocks / self.total_blocks 

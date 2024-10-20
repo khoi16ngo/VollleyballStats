@@ -26,4 +26,11 @@ class AssistStats:
     
     def _get_total_assists(self) -> int:
         return self.perfect_assists + self.great_assists + self.good_assists + self.poor_assists + self.assists_errors
+
+    def get_assist_average(self) -> float:
+        if self.total_assists == 0:
+            return 0.0
+        
+        total_weighted_assists = (self.perfect_assists * 4) + (self.great_assists * 3) + (self.good_assists * 2) + (self.poor_assists * 1) + (self.assists_errors * 0.5)
+        return total_weighted_assists / self.total_assists 
     

@@ -1,5 +1,6 @@
 from constants.action_qualities import ALL_QUALITIES
 from constants.action_types import *
+from constants.players import ALL_PLAYERS
 from models.assist_stats import AssistStats
 from models.block_stats import BlockStats
 from models.dig_stats import DigStats
@@ -9,18 +10,25 @@ from models.serve_receive_stats import ServeReceiveStats
 from models.serve_stats import ServeStats
 
 def calculate_raw_player_stats(raw_player_stats: list):
-    calculated_player_stats = {}
+    # initialize player stat dict with all actions and qualities at count 0
+    calculated_player_stats = {
+        player.number:{
+            "actions": {
+                action: {
+                    "qualities": {
+                        q: 0 for q in ALL_QUALITIES
+                    }
+                } 
+                for action in ALL_ACTIONS
+            }
+        } for player in ALL_PLAYERS  
+    }
+
     for raw_player_stat in raw_player_stats:
         # split each line into format "<play_number> <action> <quality>"
         player_number, action, quality = raw_player_stat.strip().split()
         player_number = int(player_number)
         quality = int(quality)
-
-        # initialize player if player not in stat dict
-        if player_number not in calculated_player_stats:
-            calculated_player_stats[player_number] = {
-                "actions": {action: {"qualities": {q: 0 for q in ALL_QUALITIES}} for action in ALL_ACTIONS}
-            }
 
         # increase count by one if action and quality performed for player
         calculated_player_stats[player_number]["actions"][action]["qualities"][quality] += 1

@@ -26,3 +26,10 @@ class FreeBallStats:
     
     def _get_total_free_balls(self) -> int:
         return self.perfect_free_balls + self.great_free_balls + self.good_free_balls + self.poor_free_balls + self.free_ball_errors
+    
+    def get_free_ball_average(self) -> float:
+        if self.total_free_balls == 0:
+            return 0.0
+        
+        total_weighted_free_balls = (self.perfect_free_balls * 4) + (self.great_free_balls * 3) + (self.good_free_balls * 2) + (self.poor_free_balls * 1) + (self.free_ball_errors * 0.5)
+        return total_weighted_free_balls / self.total_free_balls 

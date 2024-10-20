@@ -23,7 +23,6 @@ def clean_text_file(file_path: str):
         return
 
     file_path = get_last_n_file_path(file_path, 2)
-    print(file_path)
     new_cleaned_file_name = "./results/" + remove_file_extension(file_path) + "_cleaned.txt"
     with open(new_cleaned_file_name, 'w') as outfile:
         for line in clean_data:

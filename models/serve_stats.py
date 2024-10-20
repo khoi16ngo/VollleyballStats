@@ -27,11 +27,15 @@ class ServeStats:
     def _get_total_serves(self) -> int:
         return self.aces + self.great_serves + self.good_serves + self.poor_serves + self.serve_errors
     
-    def getOpponentOutOfSystemPercentage(self) -> float:
-        return (self.aces + self.great_serves + self.good_serves) / self.total_serves
-    
-    def getServerAverage(self) -> float:
-        total_weighted_serves = (self.aces * 4) + (self.great_serves * 3) + (self.good_serves * 2) + (self.poor_serves * 1) + (self.serve_errors * 0.5)
-        return total_weighted_serves / self.total_serves
+    def get_opponent_out_of_system_percentage(self) -> float:
+        if self.total_serves == 0:
+            return 0.0
         
-    
+        return (self.aces + self.great_serves + self.good_serves) / self.total_serves
+            
+    def get_serve_average(self):
+        if self.total_serves == 0:
+            return 0.0
+        
+        total_weighted_serves = (self.aces * 4) + (self.great_serves * 3) + (self.good_serves * 2) + (self.poor_serves * 1) + (self.serve_errors * 0.5)
+        return total_weighted_serves / self.total_serves 

@@ -45,30 +45,7 @@ def clean_files():
     for file_path in file_paths:
         clean_text_file(file_path)
 
-def calculate_set_stats():
-    file_paths = [
-        './results/day_1/chicago_united_773_set_1_cleaned.txt',
-        './results/day_1/chicago_united_773_set_2_cleaned.txt',
-        './results/day_1/ngun_lam_white_set_1_cleaned.txt',
-        './results/day_1/ngun_lam_white_set_2_cleaned.txt',
-        './results/day_1/sf_dragons_og_set_1_cleaned.txt',
-        './results/day_1/sf_dragons_og_set_2_cleaned.txt',
-        './results/day_2/montreal_freemason_m2_set_1_cleaned.txt',
-        './results/day_2/montreal_freemason_m2_set_2_cleaned.txt',
-        './results/day_2/ny_vikings_red_set_1_cleaned.txt',
-        './results/day_2/ny_vikings_red_set_2_cleaned.txt',
-        './results/day_2/ny_vikings_red_set_3_cleaned.txt',
-        './results/day_2/phi_cia_c_set_1_cleaned.txt',
-        './results/day_2/phi_cia_c_set_2_cleaned.txt',
-        './results/day_2/phi_cia_c_set_3_cleaned.txt',
-        './results/day_2/sf_dragon_og_set_1_cleaned.txt',
-        './results/day_2/sf_dynasty_daddies_set_1_cleaned.txt',
-        './results/day_2/sf_dynasty_daddies_set_2_cleaned.txt',
-        './results/day_2/sf_dynasty_daddies_set_3_cleaned.txt',
-        './results/day_3/sf_dynasty_impact_set_1_cleaned.txt',
-        './results/day_3/sf_dynasty_impact_set_2_cleaned.txt',
-    ]
-
+def calculate_set_stats(file_paths: list):
     headers = ['Player Name']
     headers += get_attack_stats_headers()
     headers += get_block_stats_headers()
@@ -102,30 +79,8 @@ def calculate_set_stats():
         new_cleaned_file_name = "./results/" + remove_file_extension(file_path) + "_stats.txt"
         print_stats_csv(new_cleaned_file_name, all_stats)
 
-def calculate_total_stats():
+def calculate_total_stats(file_paths: list):
     raw_player_stats = []
-    file_paths = [
-        './results/day_1/chicago_united_773_set_1_cleaned.txt',
-        './results/day_1/chicago_united_773_set_2_cleaned.txt',
-        './results/day_1/ngun_lam_white_set_1_cleaned.txt',
-        './results/day_1/ngun_lam_white_set_2_cleaned.txt',
-        './results/day_1/sf_dragons_og_set_1_cleaned.txt',
-        './results/day_1/sf_dragons_og_set_2_cleaned.txt',
-        './results/day_2/montreal_freemason_m2_set_1_cleaned.txt',
-        './results/day_2/montreal_freemason_m2_set_2_cleaned.txt',
-        './results/day_2/ny_vikings_red_set_1_cleaned.txt',
-        './results/day_2/ny_vikings_red_set_2_cleaned.txt',
-        './results/day_2/ny_vikings_red_set_3_cleaned.txt',
-        './results/day_2/phi_cia_c_set_1_cleaned.txt',
-        './results/day_2/phi_cia_c_set_2_cleaned.txt',
-        './results/day_2/phi_cia_c_set_3_cleaned.txt',
-        './results/day_2/sf_dragon_og_set_1_cleaned.txt',
-        './results/day_2/sf_dynasty_daddies_set_1_cleaned.txt',
-        './results/day_2/sf_dynasty_daddies_set_2_cleaned.txt',
-        './results/day_2/sf_dynasty_daddies_set_3_cleaned.txt',
-        './results/day_3/sf_dynasty_impact_set_1_cleaned.txt',
-        './results/day_3/sf_dynasty_impact_set_2_cleaned.txt',
-    ]
     for file_path in file_paths:
         raw_player_stats += read_data_file(file_path)
 
@@ -159,4 +114,33 @@ def calculate_total_stats():
     print_stats_csv('./results/total_stats.csv', all_stats)
 
 if __name__ == "__main__":
-    calculate_total_stats()
+    cleaned_file_paths = [
+        './results/day_1/chicago_united_773_set_1_cleaned.txt',
+        './results/day_1/chicago_united_773_set_2_cleaned.txt',
+        './results/day_1/ngun_lam_white_set_1_cleaned.txt',
+        './results/day_1/ngun_lam_white_set_2_cleaned.txt',
+        './results/day_1/sf_dragons_og_set_1_cleaned.txt',
+        './results/day_1/sf_dragons_og_set_2_cleaned.txt',
+        './results/day_1/sams_club_set_1_cleaned.txt',
+        './results/day_1/sams_club_set_2_cleaned.txt',
+        './results/day_2/montreal_freemason_m2_set_1_cleaned.txt',
+        './results/day_2/montreal_freemason_m2_set_2_cleaned.txt',
+        './results/day_2/ny_vikings_red_set_1_cleaned.txt',
+        './results/day_2/ny_vikings_red_set_2_cleaned.txt',
+        './results/day_2/ny_vikings_red_set_3_cleaned.txt',
+        './results/day_2/phi_cia_c_set_1_cleaned.txt',
+        './results/day_2/phi_cia_c_set_2_cleaned.txt',
+        './results/day_2/phi_cia_c_set_3_cleaned.txt',
+        './results/day_2/sf_dragon_og_set_1_cleaned.txt',
+        './results/day_2/sf_dynasty_daddies_set_1_cleaned.txt',
+        './results/day_2/sf_dynasty_daddies_set_2_cleaned.txt',
+        './results/day_2/sf_dynasty_daddies_set_3_cleaned.txt',
+        './results/day_3/sf_dynasty_impact_set_1_cleaned.txt',
+        './results/day_3/sf_dynasty_impact_set_2_cleaned.txt',
+    ]
+    sams_club_file_paths = [
+        './results/day_1/sams_club_set_1_cleaned.txt',
+        './results/day_1/sams_club_set_2_cleaned.txt',
+    ]
+    calculate_set_stats(sams_club_file_paths)
+    calculate_total_stats(cleaned_file_paths)
